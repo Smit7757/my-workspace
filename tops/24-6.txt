@@ -1,0 +1,20 @@
+24-6-22:
+CREATE DATABASE 16june;
+DROP DATABASE 16june;
+USE 16june;
+********************
+CREATE TABLE student (id INT PRIMARY KEY,NAME VARCHAR(20),email VARCHAR(50));
+ALTER TABLE student ADD COLUMN phno INT;
+ALTER TABLE student MODIFY COLUMN phno VARCHAR(50);
+ALTER TABLE student DROP COLUMN phno ;
+ALTER TABLE student RENAME TO STD;
+TRUNCATE STD;
+DROP TABLE STD;
+*****************************
+INSERT INTO student (id,NAME,email) VALUES (1,'tops','tops@gmail.com');
+INSERT INTO student (id,NAME) VALUES (3,'ravina');
+UPDATE student SET email='ravina@gmail.com' WHERE id=3;
+UPDATE student  SET email='abc@gmail.com' WHERE NAME ='tops';
+DELETE FROM student WHERE id=3;
+DELETE FROM student WHERE NAME='tops';
+
